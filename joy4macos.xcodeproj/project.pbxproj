@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,12 +22,10 @@
 		8EE337522651AD6B002CDD44 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE337512651AD6B002CDD44 /* TabViewController.swift */; };
 		8EE337552651ADE7002CDD44 /* ControllersTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE337542651ADE7002CDD44 /* ControllersTabViewController.swift */; };
 		8EE337572651AE22002CDD44 /* ServerTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE337562651AE22002CDD44 /* ServerTabViewController.swift */; };
-		B37804EA6FEC8E0CED563059 /* Pods_joy4macos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD3363FB5924A8CD0AE9F2A /* Pods_joy4macos.framework */; };
+		A6B7B0602FACA28D0055F547 /* JoyConSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A6B7B05F2FACA28D0055F547 /* JoyConSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4AD3363FB5924A8CD0AE9F2A /* Pods_joy4macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_joy4macos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EE2217BA7667DD262911BCA /* Pods-joy4macos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-joy4macos.release.xcconfig"; path = "Target Support Files/Pods-joy4macos/Pods-joy4macos.release.xcconfig"; sourceTree = "<group>"; };
 		8E5619862650130C00841F83 /* joy4macos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = joy4macos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E5619892650130C00841F83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E56198D2650130F00841F83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,7 +44,6 @@
 		8EE337512651AD6B002CDD44 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		8EE337542651ADE7002CDD44 /* ControllersTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllersTabViewController.swift; sourceTree = "<group>"; };
 		8EE337562651AE22002CDD44 /* ServerTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTabViewController.swift; sourceTree = "<group>"; };
-		D16545D1F5D4221E3A82533F /* Pods-joy4macos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-joy4macos.debug.xcconfig"; path = "Target Support Files/Pods-joy4macos/Pods-joy4macos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,28 +51,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B37804EA6FEC8E0CED563059 /* Pods_joy4macos.framework in Frameworks */,
+				A6B7B0602FACA28D0055F547 /* JoyConSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3DBAB334462EEEA3DA035CBF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4AD3363FB5924A8CD0AE9F2A /* Pods_joy4macos.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		8E56197D2650130C00841F83 = {
 			isa = PBXGroup;
 			children = (
 				8E5619882650130C00841F83 /* joy4macos */,
 				8E5619872650130C00841F83 /* Products */,
-				C1693ED7DE676BE398FC459A /* Pods */,
-				3DBAB334462EEEA3DA035CBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,15 +114,6 @@
 			path = Tabs;
 			sourceTree = "<group>";
 		};
-		C1693ED7DE676BE398FC459A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D16545D1F5D4221E3A82533F /* Pods-joy4macos.debug.xcconfig */,
-				5EE2217BA7667DD262911BCA /* Pods-joy4macos.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,11 +121,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E5619962650130F00841F83 /* Build configuration list for PBXNativeTarget "joy4macos" */;
 			buildPhases = (
-				742547881EB0BF663587484D /* [CP] Check Pods Manifest.lock */,
 				8E5619822650130C00841F83 /* Sources */,
 				8E5619832650130C00841F83 /* Frameworks */,
 				8E5619842650130C00841F83 /* Resources */,
-				3D6A0603F1315229AF30475A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,6 +157,9 @@
 				Base,
 			);
 			mainGroup = 8E56197D2650130C00841F83;
+			packageReferences = (
+				A6B7B05E2FACA28D0055F547 /* XCRemoteSwiftPackageReference "JoyConSwift" */,
+			);
 			productRefGroup = 8E5619872650130C00841F83 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -201,48 +180,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3D6A0603F1315229AF30475A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-joy4macos/Pods-joy4macos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-joy4macos/Pods-joy4macos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-joy4macos/Pods-joy4macos-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		742547881EB0BF663587484D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-joy4macos-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E5619822650130C00841F83 /* Sources */ = {
@@ -396,21 +333,20 @@
 		};
 		8E5619972650130F00841F83 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D16545D1F5D4221E3A82533F /* Pods-joy4macos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = joy4macos/joy4macos.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = JFH2RJBPA9;
+				DEVELOPMENT_TEAM = V7FCSDM8KV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = joy4macos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.marcowindt.joy4macos;
+				PRODUCT_BUNDLE_IDENTIFIER = net.remokeitel.joy4macos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -418,21 +354,20 @@
 		};
 		8E5619982650130F00841F83 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EE2217BA7667DD262911BCA /* Pods-joy4macos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = joy4macos/joy4macos.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = JFH2RJBPA9;
+				DEVELOPMENT_TEAM = V7FCSDM8KV;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = joy4macos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.marcowindt.joy4macos;
+				PRODUCT_BUNDLE_IDENTIFIER = net.remokeitel.joy4macos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -460,6 +395,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A6B7B05E2FACA28D0055F547 /* XCRemoteSwiftPackageReference "JoyConSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/remokeitel/JoyConSwift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6B7B05F2FACA28D0055F547 /* JoyConSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6B7B05E2FACA28D0055F547 /* XCRemoteSwiftPackageReference "JoyConSwift" */;
+			productName = JoyConSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8E56197E2650130C00841F83 /* Project object */;
 }
