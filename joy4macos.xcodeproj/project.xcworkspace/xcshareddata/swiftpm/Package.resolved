@@ -1,0 +1,15 @@
+{
+  "originHash" : "87c291187bdf7564657bf8497fda2293667ef658ab039f195078b0d8e573d1ec",
+  "pins" : [
+    {
+      "identity" : "joyconswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/remokeitel/JoyConSwift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "89ac8822fd62e29e2640f8cbbd7353133d521d82"
+      }
+    }
+  ],
+  "version" : 3
+}
