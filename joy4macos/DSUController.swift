@@ -171,14 +171,14 @@ class DSUController {
         timeStamp = UInt64(Date.init().timeIntervalSince1970 * 1000000)
         
         // acceleration
-        accX = DSUUtils.getUInt8arrayFromCGFloat(num: -self.gameController.acceleration.y)
-        accY = DSUUtils.getUInt8arrayFromCGFloat(num: -self.gameController.acceleration.x)
-        accZ = DSUUtils.getUInt8arrayFromCGFloat(num: self.gameController.acceleration.z)
+        accX = DSUUtils.getUInt8arrayFromCGFloat(num: -self.gameController.acceleration.x)
+        accY = DSUUtils.getUInt8arrayFromCGFloat(num:  self.gameController.acceleration.z)
+        accZ = DSUUtils.getUInt8arrayFromCGFloat(num:  self.gameController.acceleration.y)
         
         // gyroscope
-        gyroX = DSUUtils.getUInt8arrayFromCGFloat(num: self.gameController.gyro.y / 100)
-        gyroY = DSUUtils.getUInt8arrayFromCGFloat(num: self.gameController.gyro.z / 100)
-        gyroZ = DSUUtils.getUInt8arrayFromCGFloat(num: self.gameController.gyro.x / 100)
+        gyroX = DSUUtils.getUInt8arrayFromCGFloat(num:  self.gameController.gyro.y)
+        gyroY = DSUUtils.getUInt8arrayFromCGFloat(num: -self.gameController.gyro.z)
+        gyroZ = DSUUtils.getUInt8arrayFromCGFloat(num:  self.gameController.gyro.x)
     }
     
     func getDataPacket(counter: UInt32) -> [UInt8] {

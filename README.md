@@ -4,9 +4,11 @@
 
 - Accelerometer and gyroscope not working properly
 
+> [!NOTE]
+> Fixed for Pro Controllers!
+
 ## Build & Run
 
-- Run `pod install` to install depencies (requires cocoapods to be installed).
 - Open this project in Xcode
 - Make sure your Signing & Capabilities settings are correct, change the bundle identifier if needed
 - Press run
